@@ -77,15 +77,21 @@ background-size: contain
 Source: [Andrew Ng](https://en.wikipedia.org/wiki/Andrew_Ng)]
 
 ---
+class: center, top
+background-image: url(img/imaginecology.png)
+background-size: contain 
+## <https://ecostat.gitlab.io/imaginecology/>
+
+---
 class: center, middle
 ## [imaginecology](https://ecostat.gitlab.io/imaginecology/)
-
-![](img/imaginecology.png)
 
 * Basics of DL w/ a glossary; Papers, codes and datasets for training your models; How-to tutorials; Kuddos Vincent et Gaspard
 
 * I used [tuto 5: 
 Detection of animals on camera trap images with RetinaNet](https://gitlab.com/ecostat/imaginecology/-/tree/master/projects/cameraTrapDetectionWithRetinanet/)
+
+* Check out <https://github.com/oliviergimenez/DLcamtrap>
 
 * RetinaNet (detect, and classify): RetinaNet is a single-stage object detector : for each known object on an image it can predict a class, a bounding box (a square containing the object) and a confidence score.
 
@@ -151,53 +157,122 @@ class: center, middle
 background-image: url(https://media.giphy.com/media/j4rPM934CLIvC/giphy.gif)
 background-size: cover 
 
-
 ---
-class: center, middle
-
-## My peregrinations are on GitHub
-
-<https://github.com/oliviergimenez/DLcamtrap>
-
----
-class: center, middle
+class: inverse, center, middle
 # Lessons learnt
 
+---
+
+.pull-left[
+
+### Terminology is tricky
+
+* [imaginecology](https://ecostat.gitlab.io/imaginecology/basics.html) glossary 
+
+* [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
+
+
+
+]
+
+.pull-right[
+]
+
+
 
 ---
-# Terminology is tricky
 
-* Check out Glossary on [imaginecology](https://ecostat.gitlab.io/imaginecology/basics.html)
+.pull-left[
 
-* [A Statistical View of Deep Learning in Ecology](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
+### Terminology is tricky
+
+* [imaginecology](https://ecostat.gitlab.io/imaginecology/basics.html) glossary 
+
+* [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
+
+### Questioning
+
+* Reproducibility?
+
+* Legal and ethical issues?
+
+* Carbon footprint of DL?
+
+
+]
+
+.pull-right[
+]
+
 
 
 ---
+
+.pull-left[
+
+### Terminology is tricky
+
+* [imaginecology](https://ecostat.gitlab.io/imaginecology/basics.html) glossary 
+
+* [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
+
+### Questioning
+
+* Reproducibility?
+
+* Legal and ethical issues?
+
+* Carbon footprint of DL?
+
+### Navigate the jungle?
+
+* Learn from the [pro](https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview)
+
+* Follow [S. Beery](https://twitter.com/sarameghanbeery) and [M. Tabak](https://twitter.com/Mikey_QSC)
+
+
+]
+
+.pull-right[
+]
+
+
+---
+
+.pull-left[
+
+### Terminology is tricky
+
+* [imaginecology](https://ecostat.gitlab.io/imaginecology/basics.html) glossary 
+
+* [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
+
+### Questioning
+
+* Reproducibility?
+
+* Legal and ethical issues?
+
+* Carbon footprint of DL?
+
+### Navigate the jungle?
+
+* Learn from the [pro](https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview)
+
+* Follow [S. Beery](https://twitter.com/sarameghanbeery) and [M. Tabak](https://twitter.com/Mikey_QSC)
+
+
+]
+
+.pull-right[
 ```{r echo = FALSE}
 library(tweetrmd)
-include_tweet("https://twitter.com/oaggimenez/status/1325079735500759042", align = "center", maxwidth = 400)
+include_tweet("https://twitter.com/oaggimenez/status/1325079735500759042", align = "right", maxwidth = 360)
 ```
+]
 
 
----
-# Questioning
 
-### Are my analyses and results reproducible?
-
-### What are the legal and ethical issues?
-
-### What is the carbon footprint of DL?
-
-
----
-# How to navigate the jungle?
-## Learn from the pros
-
-* imaginecology, kuddos Vincent and Gaspard
-
-* https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview
-
-* Follow [Sara Beery](https://twitter.com/sarameghanbeery) and [Mikey Tabak](https://twitter.com/Mikey_QSC) on twitter.
 
 ---
 class: center, middle
