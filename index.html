@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>First steps in Deep Learning</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <script src="libs/twitter-widget/widgets.js"></script>
+    <link rel="stylesheet" href="css/xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+background-image: url(img/illustration1bis.jpg)
+background-size: cover 
+&lt;br&gt;
+# First steps in Deep Learning
+## Species identification and camera traps
+
+.large[Olivier Gimenez [<i class="fab  fa-twitter "></i>](https://twitter.com/oaggimenez) [<i class="fab  fa-github "></i>](https://github.com/oliviergimenez) | Imaginecology conference [<i class="fas  fa-home "></i>](https://imaginecology.sciencesconf.org/)] 
+
+.footnote[
+<i class="fas  fa-camera "></i> Alain Laurent &amp; David Hackel]
+
+
+
+
+
+---
+class: inverse, center, bottom
+background-image: url(img/grabbytheballs.jpg)
+background-size: cover 
+
+## Predator-prey interactions
+
+---
+class: center, middle
+background-image: url(img/juramountains.jpg)
+background-size: cover 
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;li&gt;Joint work w/ Anna Chaine, Maëlis Kervellec, OFB and Ain/Jura Hunting Associations
+&lt;li&gt;How do environmental factors affect lynx and its preys chamois and roe deer in the French Jura mountains?
+
+.footnote[
+<i class="fas  fa-camera "></i> [Peter Bucks](https://twitter.com/peterbucks)]
+
+---
+class: left, bottom
+background-image: url(img/cameratraps.jpg)
+background-size: cover 
+
+## Camera traps
+* Non-invasive monitoring. Amazing developments. 
+* Problem: gigas of pix to tag by hand. 
+
+.footnote[
+<i class="fas  fa-camera "></i> [Tiard Schulz](https://tiard-schulz-fotografie.jimdosite.com/)]
+
+
+---
+class: center, top
+background-image: url(https://miro.medium.com/max/3840/1*oB3S5yHHhvougJkPXuc8og.gif)
+background-size: contain 
+&lt;!-- # Deep learning --&gt;
+&lt;!-- * Je suis curieux. J'aime comprendre. J'aime bcp R.  --&gt;
+
+.footnote[
+Source: [Andrew Ng](https://en.wikipedia.org/wiki/Andrew_Ng)]
+
+---
+class: center, middle
+## [imaginecology](https://ecostat.gitlab.io/imaginecology/)
+
+![](img/imaginecology.png)
+
+* Basics of DL w/ a glossary; Papers, codes and datasets for training your models; How-to tutorials; Kuddos Vincent et Gaspard
+
+* I used [tuto 5: 
+Detection of animals on camera trap images with RetinaNet](https://gitlab.com/ecostat/imaginecology/-/tree/master/projects/cameraTrapDetectionWithRetinanet/)
+
+* RetinaNet (detect, and classify): RetinaNet is a single-stage object detector : for each known object on an image it can predict a class, a bounding box (a square containing the object) and a confidence score.
+
+---
+class: inverse, right, top
+background-image: url(https://blog.nationalgeographic.org/wp-content/uploads/2013/08/01-Snapshot-originals-3-Slide61.gif)
+background-size: cover 
+
+## Results?
+
+
+---
+class: inverse, center, middle
+
+## Transfer training w/ a site in Jura county
+
+---
+class: center, middle
+background-image: url(img/lynxplusprey.png)
+background-size: contain 
+
+---
+class: center, middle
+background-image: url(img/others.png)
+background-size: contain 
+
+---
+class: center, middle
+
+## Validation in another site in Ain county
+
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#txygpkpwcx .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#txygpkpwcx .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#txygpkpwcx .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#txygpkpwcx .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#txygpkpwcx .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#txygpkpwcx .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#txygpkpwcx .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#txygpkpwcx .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#txygpkpwcx .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#txygpkpwcx .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#txygpkpwcx .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#txygpkpwcx .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#txygpkpwcx .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#txygpkpwcx .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#txygpkpwcx .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#txygpkpwcx .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#txygpkpwcx .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#txygpkpwcx .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#txygpkpwcx .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#txygpkpwcx .gt_left {
+  text-align: left;
+}
+
+#txygpkpwcx .gt_center {
+  text-align: center;
+}
+
+#txygpkpwcx .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#txygpkpwcx .gt_font_normal {
+  font-weight: normal;
+}
+
+#txygpkpwcx .gt_font_bold {
+  font-weight: bold;
+}
+
+#txygpkpwcx .gt_font_italic {
+  font-style: italic;
+}
+
+#txygpkpwcx .gt_super {
+  font-size: 65%;
+}
+
+#txygpkpwcx .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="txygpkpwcx" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">species</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">trueP</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">falseP</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">falseN</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">badgers</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">535</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">123</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">41</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">chamois</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">70</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">456</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">2</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">wild cat</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">95</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">45</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">25</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">roe deer</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">872</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">65</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">229</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">hare</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">0</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">129</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">0</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">lynx</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">193</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">7</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">10</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">fox</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">786</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">54</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">136</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">wild boar</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">579</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">170</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">64</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">deer</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">3</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">68</td>
+      <td class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: #1F4257; font-weight: bold;">21</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
+
+---
+class: center, middle
+background-image: url(https://media.giphy.com/media/j4rPM934CLIvC/giphy.gif)
+background-size: cover 
+
+
+---
+class: center, middle
+
+## My peregrinations are on GitHub
+
+&lt;https://github.com/oliviergimenez/DLcamtrap&gt;
+
+---
+class: center, middle
+# Lessons learnt
+
+
+---
+# Terminology is tricky
+
+* Check out Glossary on [imaginecology](https://ecostat.gitlab.io/imaginecology/basics.html)
+
+* [A Statistical View of Deep Learning in Ecology](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
+
+
+---
+<blockquote class="twitter-tweet" align="center" data-width="400" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">😇🐍 I am learning <a href="https://twitter.com/hashtag/Python?src=hash&amp;ref_src=twsrc%5Etfw">#Python</a> &amp; for the <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> user I am, these are 💯👌<br>👉Python for R programmers <a href="https://t.co/OHSNrj9FCm">https://t.co/OHSNrj9FCm</a> <a href="https://twitter.com/kaneplusplus?ref_src=twsrc%5Etfw">@kaneplusplus</a><br>👉Learn R &amp; Python in Parallel <a href="https://t.co/w2iN45ljpE">https://t.co/w2iN45ljpE</a> Nailong Zhang HT <a href="https://twitter.com/rushworth_a?ref_src=twsrc%5Etfw">@rushworth_a</a><a href="https://twitter.com/hashtag/MachineLearning?src=hash&amp;ref_src=twsrc%5Etfw">#MachineLearning</a> <a href="https://twitter.com/hashtag/DeepLearning?src=hash&amp;ref_src=twsrc%5Etfw">#DeepLearning</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://twitter.com/hashtag/CodeNewbie?src=hash&amp;ref_src=twsrc%5Etfw">#CodeNewbie</a> <a href="https://t.co/6q287Kc8pP">pic.twitter.com/6q287Kc8pP</a></p>&mdash; Olivier Gimenez 🖖 (@oaggimenez) <a href="https://twitter.com/oaggimenez/status/1325079735500759042?ref_src=twsrc%5Etfw">November 7, 2020</a></blockquote>
+
+
+
+---
+# Questioning
+
+### Are my analyses and results reproducible?
+
+### What are the legal and ethical issues?
+
+### What is the carbon footprint of DL?
+
+
+---
+# How to navigate the jungle?
+## Learn from the pros
+
+* imaginecology, kuddos Vincent and Gaspard
+
+* https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview
+
+* Follow [Sara Beery](https://twitter.com/sarameghanbeery) and [Mikey Tabak](https://twitter.com/Mikey_QSC) on twitter.
+
+---
+class: center, middle
+background-image: url(img/illustration1.jpg)
+background-size: cover 
+## [Mieux connaître le lynx boréal grâce à l'écologie statistique](https://theconversation.com/mieux-connaitre-le-lynx-boreal-grace-a-lecologie-statistique-147241)
+
+
+.footnote[
+<i class="fas  fa-camera "></i> Sylvain Gatti]
+
+
+---
+# Study site
+
+.pull-left[
+![](img/map1.png)
+]
+
+.pull-right[
+![](img/map2.png)
+]
+
+
+
+---
+class: center, middle
+background-image: url(img/lynx_kittens.JPG)
+background-size: cover 
+
+
+
+---
+class: center, middle
+background-image: url(img/ethics.png)
+background-size: cover 
+
+
+---
+class: center, middle
+background-image: url(img/predictions.jpg)
+background-size: cover 
+
+
+---
+class: center, middle
+background-image: url(img/lynx_mulot.JPG)
+background-size: cover 
+
+
+
+---
+class: center, middle
+background-image: url(img/superlynx.JPG)
+background-size: cover 
+
+
+
+---
+class: center, middle
+background-image: url(img/lynxtrap.JPG)
+background-size: cover 
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
