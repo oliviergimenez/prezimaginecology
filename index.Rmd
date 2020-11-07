@@ -161,7 +161,7 @@ class: inverse, center, middle
 ## Validation in another site in Ain county
 
 ---
-class: center, middle
+class: inverse, center, middle
 
 ```{r, message = FALSE, warning = FALSE, echo = FALSE, comment = ""}
 library(tidyverse)
@@ -186,11 +186,58 @@ dat %>%
       cell_borders(
         sides = "bottom",
         color = "white"),
-      cell_fill(color = "#1F4257"),
+      cell_fill(color = "#F97B64"),
       cell_text(weight = "bold")),
     locations = cells_body(
-      columns = everything()))
+      columns = everything())) %>%
+  tab_options(
+    table.width = pct(100),
+    column_labels.background.color = "#1F4257",
+      column_labels.font.weight = "bold"
+  )
 ```
+
+---
+class: inverse, center, middle
+
+```{r, message = FALSE, warning = FALSE, echo = FALSE, comment = ""}
+library(tidyverse)
+library(gt)
+dat <- tribble(
+~species, ~trueP, ~falseP, ~falseN,
+"badgers", 535, 123, 41,
+"chamois", 70, 456, 2,
+"wild cat", 95, 45, 25,
+"roe deer", 872, 65, 229,
+"hare", 0, 129, 0,
+"lynx", 193, 7, 10,
+"fox", 786, 54, 136,
+"wild boar", 579, 170, 64,
+"deer", 3, 68, 21)
+dat %>% 
+  gt() %>%
+  cols_align(align = "center", 
+             columns = vars(trueP, falseP, falseN)) %>%
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "bottom",
+        color = "white"),
+      cell_fill(color = "#F97B64"),
+      cell_text(weight = "bold")),
+    locations = cells_body(
+      columns = everything())) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#4bd9a0")),
+    locations = cells_body(rows = c(2, 4,6))) %>%
+  tab_options(
+    table.width = pct(100),
+    column_labels.background.color = "#1F4257",
+    column_labels.font.weight = "bold"
+  )
+```
+
 
 ---
 class: center, middle
@@ -481,14 +528,14 @@ background-size: cover
 #### <https://bit.ly/3ezfaIy>
 
 
----
-# Study site 
+<!-- --- -->
+<!-- # Study site  -->
 
-.pull-left[
-![](img/map1.png)
-]
+<!-- .pull-left[ -->
+<!-- ![](img/map1.png) -->
+<!-- ] -->
 
-.pull-right[
-![](img/map2.png)
-]
+<!-- .pull-right[ -->
+<!-- ![](img/map2.png) -->
+<!-- ] -->
 
