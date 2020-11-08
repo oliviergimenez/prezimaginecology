@@ -34,11 +34,14 @@ style_duo(primary_color = "#1F4257", secondary_color = "#F97B64")
 ```
 
 ---
-class: inverse, center, bottom
+class: inverse, left, top
 background-image: url(img/grabbytheballs.jpg)
 background-size: cover 
 
 ## Predator-prey interactions
+
+.footnote[
+`r icon::fa("camera")`[Sarah Skinner](https://www.comedywildlifephoto.com/gallery/finalists/2019_finalists.php)]
 
 ---
 class: left, middle
@@ -47,7 +50,7 @@ background-size: cover
 
 <br><br><br><br><br><br><br><br><br><br>
 
-<li>Joint work w/ A. Chaine, M. Kervellec, OFB and Ain/Jura hunting associations
+<li>Coll. A. Chaine, M. Kervellec, V. Mielle, [OFB](https://ofb.gouv.fr/) and Ain/Jura hunting associations
 <li>How do environmental factors affect lynx and its preys ?
 
 .footnote[
@@ -107,7 +110,7 @@ background-size: contain
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### Kuddos to Vincent Miele and Gaspard Dussert !
+#### Kuddos to [Vincent Miele](https://lbbe.univ-lyon1.fr/-Miele-Vincent-.html) and [Gaspard Dussert](https://www.linkedin.com/in/gaspard-dussert/?originalSubdomain=fr) !
 
 ---
 class: right, top
@@ -115,11 +118,11 @@ background-image: url(img/illustration1.jpg)
 background-size: cover 
 
 .footnote[
-`r icon::fa("camera")` Sylvain Gatti]
+`r icon::fa("camera")` [Sylvain Gatti](https://www.linkedin.com/in/sylvaingatti/?locale=fr_FR)]
 
 --
 
-I used [Detection of animals on camera trap images with RetinaNet](https://gitlab.com/ecostat/imaginecology/-/tree/master/projects/cameraTrapDetectionWithRetinanet/)
+I used the how-to guide on [detection of animals on camera trap images](https://gitlab.com/ecostat/imaginecology/-/tree/master/projects/cameraTrapDetectionWithRetinanet/)
 
 --
 
@@ -252,7 +255,7 @@ background-size: contain
 
 ---
 class: inverse, center, middle
-# Lessons learnt
+# Lessons learned
 
 
 ---
@@ -313,7 +316,7 @@ class: inverse, center, middle
 
 * [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
 
-### Questioning
+### What about
 
 
 ]
@@ -331,7 +334,7 @@ class: inverse, center, middle
 
 * [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
 
-### Questioning
+### What about
 
 * Reproducibility?
 
@@ -353,7 +356,7 @@ class: inverse, center, middle
 
 * [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
 
-### Questioning
+### What about
 
 * Reproducibility?
 
@@ -378,13 +381,13 @@ class: inverse, center, middle
 
 * [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
 
-### Questioning
+### What about
 
 * Reproducibility?
 
 * Legal and ethical issues?
 
-* Carbon footprint of DL?
+* Carbon footprint?
 
 
 ]
@@ -405,15 +408,15 @@ class: inverse, center, middle
 
 * [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
 
-### Questioning
+### What about
 
 * Reproducibility?
 
 * Legal and ethical issues?
 
-* Carbon footprint of DL?
+* Carbon footprint?
 
-### Navigate the jungle?
+### Ask the experts
 
 
 ]
@@ -431,17 +434,17 @@ class: inverse, center, middle
 
 * [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
 
-### Questioning
+### What about
 
 * Reproducibility?
 
 * Legal and ethical issues?
 
-* Carbon footprint of DL?
+* Carbon footprint?
 
-### Navigate the jungle?
+### Ask the experts
 
-* Learn from the [pro](https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview)
+* [iWildCam](https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview) competition
 
 
 ]
@@ -461,17 +464,17 @@ class: inverse, center, middle
 
 * [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
 
-### Questioning
+### What about
 
 * Reproducibility?
 
 * Legal and ethical issues?
 
-* Carbon footprint of DL?
+* Carbon footprint?
 
-### Navigate the jungle?
+### Ask the experts
 
-* Learn from the [pro](https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview)
+* [iWildCam](https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview) competition
 
 * Follow [S. Beery](https://twitter.com/sarameghanbeery) and [M. Tabak](https://twitter.com/Mikey_QSC)
 
@@ -491,17 +494,17 @@ class: inverse, center, middle
 
 * [Statistical view](https://www.stat.colostate.edu/~jah/talks_public_html/isec2020/index.html) by Jennifer Hoeting
 
-### Questioning
+### What about
 
 * Reproducibility?
 
 * Legal and ethical issues?
 
-* Carbon footprint of DL?
+* Carbon footprint?
 
-### Navigate the jungle?
+### Ask the experts
 
-* Learn from the [pro](https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview)
+* [iWildCam](https://www.kaggle.com/c/iwildcam-2020-fgvc7/overview) competition
 
 * Follow [S. Beery](https://twitter.com/sarameghanbeery) and [M. Tabak](https://twitter.com/Mikey_QSC)
 
