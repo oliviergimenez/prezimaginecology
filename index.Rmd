@@ -246,6 +246,12 @@ background-size: cover
 
 ---
 class: inverse, center, middle
+background-image: url(https://www.tennislegend.fr/gif/zzS0DOD26.gif)
+background-size: contain
+
+
+---
+class: inverse, center, middle
 # Lessons learnt
 
 
