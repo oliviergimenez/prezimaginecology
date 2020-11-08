@@ -136,6 +136,11 @@ Check out [my workflow](https://github.com/oliviergimenez/DLcamtrap)
 <!-- RetinaNet is a single-stage object detector : for each known object on an image it can predict a class, a bounding box (a square containing the object) and a confidence score. -->
 
 ---
+class: left, top
+background-image: url(https://thumbs.gfycat.com/FreeThoughtfulJumpingbean-size_restricted.gif)
+background-size: cover 
+
+---
 class: inverse, right, top
 background-image: url(https://blog.nationalgeographic.org/wp-content/uploads/2013/08/01-Snapshot-originals-3-Slide61.gif)
 background-size: cover 
@@ -146,7 +151,7 @@ background-size: cover
 ---
 class: inverse, center, middle
 
-## Transfer learning on a site in Jura county
+## Transfer learning on a site (Jura)
 
 ---
 class: center, middle
@@ -161,7 +166,7 @@ background-size: contain
 ---
 class: inverse, center, middle
 
-## Validation in another site in Ain county
+## Automatic tagging in another site (Ain)
 
 ---
 class: inverse, center, middle
@@ -251,6 +256,25 @@ background-size: cover
 class: inverse, center, middle
 background-image: url(https://www.tennislegend.fr/gif/zzS0DOD26.gif)
 background-size: contain
+
+---
+class: left, top
+background-image: url(https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
+background-size: cover
+
+--
+
+### Generalisation to another site is challenging
+
+--
+
+### Lack of diversity in training dataset
+
+--
+
+--
+
+### Pool both sites, and redo
 
 
 ---
