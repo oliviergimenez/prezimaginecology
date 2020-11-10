@@ -83,10 +83,6 @@ background-size: cover
 
 --
 
-* Amazing recent developments
-
---
-
 * Gigas of pix to tag by hand
 
 --
