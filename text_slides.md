@@ -4,55 +4,54 @@
 
 2. I'm working a lot on predator-prey interactions these days. These are interactions between species that structure communities or large mammals. 
 
-3. This is joint work with Anna Chaine, Maëlis Kervellec, both first year Master interns, Vincent Miele, and colleagues from the French Office for Biodiversity and from hunting associations. 
+3. This is joint work with Anna Chaine, Maëlis Kervellec, both first-year Master students, Vincent Miele deep learning MC, and colleagues from the French Office for Biodiversity and from hunting associations. 
 
 The main question we're interested in is to understand how predators, preys and their environment interact.
 
-4. Pour ce faire, les collègues de l'OFB et des fédérations de chasse collectent des données dans l'habitat naturel des espèces qui nous intéressent, grâce à des pièges photos laissés à des endroits stratégiques. Alors pas avec du matériel comme celui-ci qui disparaitrait bien vite. 
+4. To address this issues, our colleagues collect data in the natural habitat of the species we're studying, using camera traps set up in strategic places. So we don't use this kind of material, it would disappear in no time. 
 
-5. Mais plutôt ce genre de piège photo. Avec un système où l'on installe un appareil de chaque côté de chemins où les prédateurs sont susceptibles de passer, comme ici une femelle et ses petits.  
-Cette méthode est non-invasive, autrement dit on n'a pas besoin de capturer physiquement les animaux. Le souci est qu'on se retrouve avec des tonnes de photos auxquelles il faut associer une étiquette espèce. C'est là qu'entre en jeu le deep learning. 
+5. Instead these camera traps are used. These are installed on both sides of the path used by animals, like this lynx females w/ her kittens. This methods is non-invasive, meaning that we don't have to physically capture individuals. The big issue is that we get tons of pictures which we need to annotate with species id. This is where deep learning is useful!
 
-6. Vincent nous a présenté l'approche ce matin. L'idée est de nourrir les algorithmes avec des photos et en sortie de récupérer l'espèce qui se trouve sur la photo. 
+6. The idea is first to use annotated pictures to train models to identify species; second we may use these models to identify species on any non-annotated pictures. 
 
-7. Pour faire mes premiers pas en DL, j'ai utilisé imaginecology. Sérieusement, jetez-y un coup d'oeil. C'est bourré de ressources précieuses et pertinentes. Il y une intro au DL, des codes, des papiers, des données pour entrainer vos modèles. Et surtout tout un tas de tutoriels pour vous former. Bravo à Vincent et Gaspard pour ce boulot! 
+7. To make my first steps in deep learning, I used the resources available on imaginecology a website we built in our French national centre for statistical ecology. Give it a try, it's awesome. It's full of relevant and useful resources. There is an introduction to deep learning, codes, papers and data to train your models. There is also a series of tutorials that are very didactic. Kuddos to Vincent and Gaspard for an amazing work!  
 
-8. J'ai utilisé le tutoriel détection d'animaux sur des images issues de pièges photos. On utilise Retinanet qui adopte l'approche en deux temps détection et classification. Vous pouvez retrouver mes pérégrinations sur GitHub.
+8. I used the tutorial on detection of animals on camera trap images. I used Retinanet that implements a two-step approach detection and classification. You can find my peregrinations on GitHub. 
 
-9. Avant de passer aux résultats, je rappelle que je suis débutant. Je me forme avec l'aide de Vincent qui n'est toutefois pas responsables de mes errements. 
+9. Before going to the results, a disclaimer: I am a beginner, and these results are only preliminary. My colleagues should not be made responsible of my errors. 
 
 10. What are our results?
 
 11. First, I used transfer learning on a study site in the Jura county where we had a bunch of annotated pictures. 
 
-12. The results are pretty good. We suceed in detecting and identifying lynx individuals and its preys, chamois and roe deer, with a high level of certainty. 
+12. The results are pretty good. We succeed in detecting and identifying lynx individuals and its preys, chamois and roe deer, with a high level of certainty. 
+
 13. It is also the case for other species that appear on the pictures. 
 
-14. Ensuite, j'ai voulu utilisé mon modèle pour étiqueter automatiquement des photos prises avec des pièges installés sur un autre site, dans l'Ain. Ces photos ont aussi été étiquetées à la main.
+14. Then, I used my model to automatically annotate a bunch of pictures that were taken at another site, in the Ain county. The cool thing is that these pictures were also annotated, so that I could go through a step of testing of the model. 
 
-15. On obtient ce genre de résultats. Avec en colonne les espèces, les vrais positifs, les faux positifs, et les faux négatifs.  
-Et là, si on se débrouille pas mal pour le lynx, c'est le drame pour ses proies, avec un excès de faux positif pour le chamois, et de faux négatifs pour les chevreuils. 
+15. We get some results that can be arranged as follows. In columns you have the species, the true positives, the false positives and the false negatives. We're doing pretty well for lynx, but we wonderfully fail at identifying its preys, with an excess of false positives for chamois, and an excess of false negatives for roe deer.
 
-16. Passé la frustration...
+16. Took me some time to get over the frustration...
 
-17. Je me suis demandé pourquoi de si mauvais résultats. Plusieurs raisons possibles. 
-18. On sait par exemple que généraliser un modèle entrainé sur un site à un autre site est difficile en DL. Les pièges, les conditions environnementales, le terrain, l'exposition, des tas de choses peuvent être différentes.  
-Il se peut aussi que le jeu de données d'entrainement soit trop pauvre.  
-Ce que je compte faire maintenant, sur le conseil de Vincent, c'est utiliser les données des deux sites pour entrainer mon modèle. 
+17. Then I asked myself why the results were so bad. We see several reasons why. 
 
-19. Je finirai cet exposé en donnant qqs leçons que j'ai apprises en cours de chemin.
+18. We know for example that generalisation from a site to another one is tricky with deep learning. Traps might be different, as well as the environmental conditions, the exposition, etc... 
+Another reason might be that our training dataset was to small. 
+Next thing I'm gonna do is to pool both datasets in the two counties, and re-train my model. 
 
-20. La terminologie peut être un obstable. Sur imaginecology, vous trouverez un glossaire qui vous sauvera. Le point de vue d'une statisticienne peut aussi être utile pour faire le // avec un vocabulaire plus familier.  
+19. As a way to end my short talk, let me go through a few lessons I learnt along the way. 
 
-Je me suis posé pas mal de questions sur la reproductibilité. Entrainer un modèle s'apparente parfois à de la cuisine avec sa part d'improvisation. 
+20. Terminology is an obstacle. On the imaginecology website, you will find a glossary that might help. Also, I recommend exploring the material shared by Jennifer Hoeting, and the video of her talk at the last International Statistical Ecology Conference. The viewpoint of a statistician is useful to make the parallel with a familiar vocabulary.  
 
-Il y a aussi des questions de droit et d'éthique qui se posent quand on traite des photos sur lesquelles nos conspécifiques se mettent en scène.  
+Also, I asked myself a lot of questions. 
 
-Se pose aussi la question de l'empreinte écologique de l'approche DL comme on a souvent besoin d'utiliser des cartes graphiques, très gourmandes en énergie, sur de longues périodes.  
+First, about reproducibility. Training a model is like cooking with its share of improvisation. 
+Second, there are legal and ethical considerations that should be raised when we analyze pictures on which our species puts itself on stage. 
+Third, there is the question of the carbon footprint of deep learning as we often have to use GPUs for long periods. 
+Fourth, my advice is to check out what the experts are doing. For example, there is a challenge organised by Sara Beery in which the best teams share their recipes. Talking about Sara, I warmly recommend to follow her on Twitter, as well as Mikey Tabak, both are yodas of deep learning for ecology.  
 
-Enfin, je conseille à celles et ceux qui comme moi veulent se former d'aller voir ce que font les pros. Il y a par exemple cette compétition organisée par Sara Beery où vous retrouverez les conseils des meilleures équipes. Je vous suggère d'ailleurs de suivre Sara, ainsi que Mikey Tabak, deux étoiles montantes du DL pour l'écologie.  
-
-Dernier point, apprendre Python ne peut pas faire de mal comme le DL se parle en Python, et pour ce faire, si comme moi vous êtes plutôt utilisateur de R, je vous conseille ces deux ouvrages. 
+Last, the deep learning community speaks Python, therefore learning Python cannot hurt. If like me you're a heavy R user, these two books might help. 
 
 21. Thank you for listening. 
 
