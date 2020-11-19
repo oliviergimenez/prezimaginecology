@@ -1,4 +1,4 @@
-## First steps in deep learning: Species identification and camera traps
+## My first steps in deep learning: Species identification and camera traps
 
 This repo contains the slides for a short talk I gave at the [imaginecology](https://imaginecology.sciencesconf.org/) workshop in November 2020.
 
